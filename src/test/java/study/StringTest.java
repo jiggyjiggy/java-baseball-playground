@@ -41,7 +41,7 @@ public class StringTest {
         assertThat(target.charAt(1)).isEqualTo('b');
         assertThat(target.charAt(2)).isEqualTo('c');
     }
-    
+
     /*
     * The assertThatExceptionOfType method allows you to test whether an exception of a specific type is thrown, while the assertThatThrownBy method allows you to test whether a piece of code throws any exception at all.
     * */
