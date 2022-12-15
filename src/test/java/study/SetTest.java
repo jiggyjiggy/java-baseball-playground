@@ -10,6 +10,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SetTest {
     private Set<Integer> numbers;
@@ -36,6 +37,6 @@ public class SetTest {
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3})
     void contains(int number) {
-        assertThat(numbers.contains(number)).isTrue();
+        assertTrue(numbers.contains(number));
     }
 }
